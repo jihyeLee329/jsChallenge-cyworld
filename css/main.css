@@ -70,7 +70,7 @@
 /* ----- 브라우저 미니폼피 영역 ----- */
 #minihompy {
   height: calc(100% - 45rem);
-  background: url('../img/minihompy-bg.svg');
+  background: url("../img/minihompy-bg.svg");
   background-size: 15%;
   display: flex;
   justify-content: start;
@@ -82,10 +82,11 @@
   padding: 30rem;
 }
 .minihompy-left {
-  width: 20%;
+  width: 25%;
   padding-right: 10rem !important;
 }
-.profile-wrap {
+.profile-wrap,
+.content-wrap {
   border: 1px solid #333;
   background-color: #fff;
   padding: 5rem;
@@ -93,7 +94,8 @@
   height: 100%;
   position: relative;
 }
-.profile-wrap:before {
+.profile-wrap:before,
+.content-wrap:before {
   /* wrap dotted 선  */
   content: "";
   width: calc(100% + 10rem);
@@ -105,31 +107,71 @@
   top: -5rem;
   left: -5rem;
 }
-.total-guest{padding:20rem 0 10rem; font-size:14rem;}
-.profile-box {
-    position:relative; 
-    z-index:10;
-  padding: 20rem;
+.profile-wrap:before {
+  border-right: none;
+}
+.content-wrap:before {
+  border-left: none;
+}
+.total-guest {
+  padding: 20rem 0 10rem;
+  font-size: 14rem;
+}
+.profile-box,
+.content-box {
+  position: relative;
+  z-index: 10;
+  padding: 35rem;
   height: calc(100% - 55rem);
   border: 1px solid #333;
   border-radius: 15rem;
 }
-.profile-img {
-}
+
 .profile-box select {
-width:100%;
+  width: 100%;
   margin: 15rem 0;
   padding: 5rem 10rem;
 }
-.profile-box .quote{
-    font-size: 16rem;
-    line-height: 1.5;
-    word-break: keep-all;
-    font-family: "DungGeunMo", sans-serif;
+.profile-box .quote {
+  font-size: 16rem;
+  line-height: 1.5;
+  word-break: keep-all;
+  font-family: "DungGeunMo", sans-serif;
 }
 .minihompy-right {
-  width: calc(100% - 25%);
+  width: calc(100% - 30%);
   padding-left: 10rem !important;
+  background-color: #fff;
+  position: relative;
+}
+.content-title {
+  position: relative;
+  z-index: 1;
+  font-size: 20rem;
+  font-weight: bold;
+  padding: 20rem 0 5rem;
+}
+.my42world-link {
+  display: block;
+  font-size: 12rem;
+  text-align: right;
+  position: absolute;
+  right: 10rem;
+  bottom: 7rem;
+}
+.my42world-link:visited {
+  color: #333;
+}
+.content-box{overflow-y: auto; padding:35rem 50rem;}
+.content-top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.content-top .clock{
+    font-size:35rem;
+    font-weight: 600;
+    color:#333
 }
 .minihompy-menu {
   width: 5%;
