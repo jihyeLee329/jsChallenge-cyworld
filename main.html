@@ -4,21 +4,44 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="favicon" href="favicon.ico">
+    <link rel="favicon" href="favicon.ico" />
     <title>index</title>
     <link href="./css/reset.css" rel="stylesheet" />
     <link href="./css/main.css" rel="stylesheet" />
   </head>
   <body>
-    <div id="main-wrap">
-        <div id="browser">
-            <div class="tab">https://jihyelee329.github.io/jsChallenge-cyworld/</div>
-            <div id="minihompy">
-
-
-            </div>
-
+    <section id="main-wrap">
+      <div id="browser">
+        <div class="tab">
+          <span>https://jihyelee329.github.io/jsChallenge-cyworld/</span>
+          <span class="close-btn"></span>
         </div>
-      <script src="/js/main.js"></script>
+        <div id="minihompy">
+          <div class="minihompy-left">
+            <div class="profile-wrap">
+              <div class="total-guest">total : xx 명</div>
+              <div class="profile-box">
+                <div class="profile-img">
+                  <img src="./img/main_img.jpg" alt="우리집고양이" />
+                </div>
+                <select>
+                  <option value="">해피</option>
+                  <option value="">우울</option>
+                  <option value="">사랑해</option>
+                  <option value="">짜증</option>
+                </select>
+                <p class="quote"></p>
+              </div>
+            </div>
+            
+          </div>
+          <div class="minihompy-right"></div>
+          <div class="minihompy-menu"></div>
+        </div>
+      </div>
+    </section>
+
+    <script src="/js/mainBgColor.js"></script>
+    <script src="/js/quotes.js"></script>
   </body>
 </html>
