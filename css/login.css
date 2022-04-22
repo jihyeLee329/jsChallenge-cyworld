@@ -1,0 +1,89 @@
+#login-wrap {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url(../img/cyworld-bg.svg);
+  background-position: center;
+  background-size: cover;
+}
+#login-wrap:after {
+  content: "";
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.login-box {
+  z-index: 1;
+  width: 600rem;
+  height: 600rem;
+  border-radius: 100%;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  padding: 100rem;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.logo {
+  text-align: center;
+}
+.login-box .logo > p {
+    margin-top: 15rem;
+  font-family: "DungGeunMo", sans-serif;
+  color: #129fce;
+  font-size: 23rem;
+  font-weight: 500;
+  text-align: center;
+}
+#login-form * {
+  display: block;
+  width: 100%;
+  line-height: 2;
+  font-size: 16rem;
+  padding: 10rem 30rem;
+  border-radius: 30rem;
+  margin: 0 auto;
+  transition: 0.3s;
+}
+#login-form input {
+  text-align: left;
+  border: 1px solid #f1f1f1;
+}
+#login-form input:focus {
+  border: 1px solid #ddd;
+}
+#login-form input + input {
+  margin: 15rem 0 50rem 0;
+}
+#login-form .login-btn {
+  background: #313131;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+#login-form .login-btn:hover {
+  opacity: 0.7;
+}
+@media screen and (min-width: 1921px) {
+  html,
+  body {
+    font-size: 1px;
+  }
+}
+@media screen and (max-width: 720px) {
+  html,
+  body {
+    font-size: 0.2778vw;
+  }
+}
