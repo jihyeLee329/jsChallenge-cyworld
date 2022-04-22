@@ -19,15 +19,119 @@
 }
 
 #browser {
-  width: 90vw;
+  width: 80vw;
   height: 90vh;
   position: fixed;
   left: 50%;
   top: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   background: #fff;
-  border: 2px solid #0054E1;
-  border-radius:10rem;
+  border: 2px solid #0054e1;
+  border-radius: 10rem;
   z-index: 1;
 }
-#browser .tab{background: linear-gradient(#0054E1, #056AFE); padding: 15rem 15rem; color:#fff;font-size:14rem;}
+
+/* ----- 브라우저 탭 영역 ----- */
+#browser .tab {
+  position: relative;
+  background: linear-gradient(#0054e1, #056afe);
+  padding: 15rem 20rem;
+  color: #fff;
+  font-size: 14rem;
+}
+#browser .close-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 10rem;
+  margin: auto;
+  padding: 5rem;
+  box-sizing: border-box;
+  width: 30rem;
+  height: 30rem;
+  border: 1px solid #fff;
+  border-radius: 5rem;
+  background: linear-gradient(135deg, #cf8568, #cd3421);
+}
+#browser .close-btn:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url("/img/ico_x.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* -----// 브라우저 탭 영역 종료 ----- */
+
+/* ----- 브라우저 미니폼피 영역 ----- */
+#minihompy {
+  height: calc(100% - 45rem);
+  background: url('/img/minihompy-bg.svg');
+  background-size: 15%;
+  display: flex;
+  justify-content: start;
+  padding: 30rem;
+}
+#minihompy > div {
+  background: red;
+  border-radius: 15rem;
+  padding: 30rem;
+}
+.minihompy-left {
+  width: 20%;
+  padding-right: 10rem !important;
+}
+.profile-wrap {
+  border: 1px solid #333;
+  background-color: #fff;
+  padding: 5rem;
+  border-radius: 15rem;
+  height: 100%;
+  position: relative;
+}
+.profile-wrap:before {
+  /* wrap dotted 선  */
+  content: "";
+  width: calc(100% + 10rem);
+  height: calc(100% + 10rem);
+  border: 1px dashed #fff;
+  border-radius: 15rem;
+  display: block;
+  position: absolute;
+  top: -5rem;
+  left: -5rem;
+}
+.total-guest{padding:20rem 0 10rem; font-size:14rem;}
+.profile-box {
+    position:relative; 
+    z-index:10;
+  padding: 20rem;
+  height: calc(100% - 55rem);
+  border: 1px solid #333;
+  border-radius: 15rem;
+}
+.profile-img {
+}
+.profile-box select {
+width:100%;
+  margin: 15rem 0;
+  padding: 5rem 10rem;
+}
+.profile-box .quote{
+    font-size: 16rem;
+    line-height: 1.5;
+    word-break: keep-all;
+    font-family: "DungGeunMo", sans-serif;
+}
+.minihompy-right {
+  width: calc(100% - 25%);
+  padding-left: 10rem !important;
+}
+.minihompy-menu {
+  width: 5%;
+}
+/* -----// 브라우저 미니폼피 영역 ----- */
