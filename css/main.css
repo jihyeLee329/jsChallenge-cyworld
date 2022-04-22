@@ -1,19 +1,33 @@
 #main-wrap {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    background-image: url(../img/cyworld-bg.svg);
-    background-position: center;
-    background-size: cover;
-  }
-  #main-wrap:after {
-    content: "";
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.4);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url(../img/cyworld-bg.svg);
+  background-position: center;
+  background-size: cover;
+}
+#main-wrap:after {
+  content: "";
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#browser {
+  width: 90vw;
+  height: 90vh;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  background: #fff;
+  border: 2px solid #0054E1;
+  border-radius:10rem;
+  z-index: 1;
+}
+#browser .tab{background: linear-gradient(#0054E1, #056AFE); padding: 15rem 15rem; color:#fff;font-size:14rem;}
