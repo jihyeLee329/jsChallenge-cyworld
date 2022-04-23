@@ -34,6 +34,7 @@ h3.title {
 
 #browser {
   width: 75vw;
+  max-width: 1400px;
   height: 90vh;
   position: fixed;
   left: 50%;
