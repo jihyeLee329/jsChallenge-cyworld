@@ -27,65 +27,107 @@
                 <div class="select_wrap DungGeunMo">
                   <span>TODAY IS...</span>
                   <select name="emotion" class="DungGeunMo">
-                    <option value="happy">🌈 해피 </option>
-                    <option value="gloomy">🌧️ 우울 </option>
-                    <option value="love">🧡 사랑 </option>
-                    <option value="hurt">🩹 상처 </option>
-                    <option value="sad">💧 슬픔 </option>
-                    <option value="">💭 .... </option>
-                    <option value="annoyance">👿 짜증 </option>
+                    <option value="happy">🌈 해피</option>
+                    <option value="gloomy">🌧️ 우울</option>
+                    <option value="love">🧡 사랑</option>
+                    <option value="hurt">🩹 상처</option>
+                    <option value="sad">💧 슬픔</option>
+                    <option value="">💭 ....</option>
+                    <option value="annoyance">👿 짜증</option>
                   </select>
                 </div>
                 <p class="quote GangwonEdu">
-                  "나 좋아하지마 "<br/> 
-                  "그게 뭔데"<br/> 
-                  "나 좋아하지 말라고"<br/> 
-                  "그거 어떻게 하는건데"<br/>
+                  "나 좋아하지마 "<br />
+                  "그게 뭔데"<br />
+                  "나 좋아하지 말라고"<br />
+                  "그거 어떻게 하는건데"<br />
                   "..."
                 </p>
                 <div class="surfing-url">
-                  <select name="url" class="DungGeunMo" onchange="window.open(value,'_blank')">
+                  <select
+                    name="url"
+                    class="DungGeunMo"
+                    onchange="window.open(value,'_blank')"
+                  >
                     <option value="">★일촌 파도타기</option>
-                    <option value="https://nomadcoders.co/javascript-for-beginners">바닐라 JS로 크롬 앱 만들기</option>
-                    <option value="https://nomadcoders.co/nwitter">트위터 클론코딩</option>
-                    <option value="https://nomadcoders.co/react-for-beginners">ReactJS로 영화 웹 서비스 만들기</option>
-                    <option value="https://nomadcoders.co/react-hooks-introduction">실전형 리액트 Hooks 10개</option>
-                    <option value="https://nomadcoders.co/nextjs-fundamentals">NextJS 시작하기</option>
-                    <option value="https://nomadcoders.co/redux-for-beginners">초보자를 위한 리덕스 101</option>
+                    <option
+                      value="https://nomadcoders.co/javascript-for-beginners"
+                    >
+                      바닐라 JS로 크롬 앱 만들기
+                    </option>
+                    <option value="https://nomadcoders.co/nwitter">
+                      트위터 클론코딩
+                    </option>
+                    <option value="https://nomadcoders.co/react-for-beginners">
+                      ReactJS로 영화 웹 서비스 만들기
+                    </option>
+                    <option
+                      value="https://nomadcoders.co/react-hooks-introduction"
+                    >
+                      실전형 리액트 Hooks 10개
+                    </option>
+                    <option value="https://nomadcoders.co/nextjs-fundamentals">
+                      NextJS 시작하기
+                    </option>
+                    <option value="https://nomadcoders.co/redux-for-beginners">
+                      초보자를 위한 리덕스 101
+                    </option>
                   </select>
                 </div>
               </div>
             </div>
-            
           </div>
           <div class="minihompy-right">
             <div class="content-wrap">
               <h1 class="content-title">
                 ♥━─…łĿøvеуоц…─━♥
-                <a class="my42world-link" href="https://jihyelee329.github.io/jsChallenge-cyworld/main">https://jihyelee329.github.io/jsChallenge-cyworld/main</a>
+                <a
+                  class="my42world-link"
+                  href="https://jihyelee329.github.io/jsChallenge-cyworld/main"
+                  >https://jihyelee329.github.io/jsChallenge-cyworld/main</a
+                >
               </h1>
-                <div class="content-box">
-                  <div class="content-top">
-                    <h3 class="DungGeunMo title">New Updates!</h3>
-                    <div class="weather GangwonEdu">
+              <div class="content-box">
+                <div class="content-top">
+                  <h3 class="DungGeunMo title">New Updates!</h3>
+                  <div id="music" class="music">
+                    <div class="music-album">
+                      <audio id="music-box">
+                        <source id="musicSource" src="" />
+                        Yor browser does not support the audio format.
+                      </audio>
+                      <img class="music-album" src="" alt="">
+                      <h3 class="music-info"></h3>
                     </div>
-                    <h1 class="clock"></h1>
-                  </div>
-                  <div class="content-middle miniroom">
-                    <h3 class="DungGeunMo title">Mini Room</h3>
-                    <div>
-                      <img src="./img/miniroom.png" alt="미니룸" />
-                      <span class="greeting"></span>
+                    <!-- 버튼 태그 생성 -->
+                    <div class="music-btn">
+                      <button id="btnPlay">재생</button>
+                      <button id="btnPause">일시정지</button>
+                      <button id="btnNext">다음</button>
                     </div>
                   </div>
-                  <div class="content-bottom todo-wrap">
-                    <h3 class="DungGeunMo title">To Do List</h3>
-                    <form class="todo-form">
-                      <input type="text" placeholder="Write a To Do and Press Enter" />
-                    </form>
-                    <ul class="todo-list"></ul>
+                  <div class="weather GangwonEdu"></div>
+                  
+                  <h1 class="clock"></h1>
+                </div>
+                <div class="content-middle miniroom">
+                  <h3 class="DungGeunMo title">Mini Room</h3>
+                  <div>
+                    <img src="./img/miniroom.png" alt="미니룸" />
+                    <span class="greeting"></span>
                   </div>
                 </div>
+                <div class="content-bottom todo-wrap">
+                  <h3 class="DungGeunMo title">To Do List</h3>
+                  <form class="todo-form">
+                    <input
+                      type="text"
+                      placeholder="Write a To Do and Press Enter"
+                    />
+                  </form>
+                  <ul class="todo-list"></ul>
+                </div>
+              </div>
             </div>
           </div>
           <ul class="minihompy-menu DungGeunMo">
@@ -98,7 +140,7 @@
         </div>
       </div>
     </section>
-
+    <script src="./js/music.js"></script>
     <script src="./js/mainBgColor.js"></script>
     <script src="./js/clock.js"></script>
     <script src="./js/todo.js"></script>
