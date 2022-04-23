@@ -50,14 +50,16 @@ const colorArray = ["#FF6633",
 "#6666FF"];
 const miniHompyLeft = document.querySelector('.minihompy-left');
 const miniHompyRight = document.querySelector('.minihompy-right');
-const miniHompyMenu = document.querySelector('.minihompy-menu');
+const miniHompyMenu = document.querySelectorAll('.minihompy-menu li');
 
 function getRandomColor(){
     const firstColor = Math.floor(Math.random() * colorArray.length);
     const secondColor = Math.floor(Math.random() * colorArray.length);
     miniHompyLeft.style.background = colorArray[firstColor];
     miniHompyRight.style.background = colorArray[firstColor];
-    miniHompyMenu.style.background = colorArray[secondColor];
+    miniHompyMenu.forEach(menu =>{
+        menu.style.background = colorArray[secondColor];
+    });
 }
 getRandomColor();
 
