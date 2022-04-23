@@ -1,6 +1,13 @@
 .DungGeunMo {
   font-family: "DungGeunMo", sans-serif;
 }
+.GangwonEdu{font-family: "GangwonEdu_OTFBoldA", sans-serif;}
+h3.title {
+  border-bottom: 1px solid #15b1cb;
+  color: #15b1cb;
+  font-size: 18rem;
+  padding-bottom: 5rem;
+}
 
 #main-wrap {
   width: 100vw;
@@ -152,6 +159,7 @@
   line-height: 1.5;
   word-break: keep-all;
   padding: 20rem 0;
+  text-align: center;
 }
 .minihompy-right {
   width: calc(100% - 30%);
@@ -191,16 +199,16 @@
   font-weight: 600;
   color: #333;
 }
-
+.weather{font-size:25rem;}
+.weather span{display:inline-block; vertical-align: top; line-height: 1.2;}
+.weather span:last-of-type {font-size:22rem;}
+.content-middle{margin:30rem 0;}
 .content-middle img {
+  display: block;
+  margin-top:10rem;
   width: 100%;
 }
-.todo-wrap h3 {
-  border-bottom: 1px solid #15b1cb;
-  color: #15b1cb;
-  font-size: 18rem;
-  padding-bottom: 5rem;
-}
+
 .todo-form input {
   width: 100%;
   padding: 5rem 10rem;
@@ -208,9 +216,25 @@
   border: 1px solid #ddd;
   margin: 10rem 0;
 }
-.todo-list li{padding:10rem;font-size: 16rem;}
+.todo-list li{padding:10rem;font-size: 16rem; position: relative;}
+.todo-list li .del-button{position:absolute;right:0; z-index:1;}
 .todo-list li .date{font-size:14rem; margin-left:10rem; color:#15b1cb}
 .minihompy-menu {
-  width: 5%;
+  width: 8%;
+  height: fit-content;
+  margin-left: -30rem;
+  position: relative;
+  z-index: 10;
+  top: 50rem;
+}
+.minihompy-menu > li{
+  cursor: pointer;
+    padding: 10rem 15rem;
+    font-size: 14rem;
+    color: #fff;
+    line-height: 1.5;
+    border: 1px solid #fff;
+    border-left: none;
+    border-radius: 0 5rem 5rem 0;
 }
 /* -----// 브라우저 미니폼피 영역 ----- */
