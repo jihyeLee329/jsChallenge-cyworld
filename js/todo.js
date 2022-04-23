@@ -22,7 +22,7 @@ function showTodo(newTodoObj){
     const li = document.createElement('li');
     const span=document.createElement('span');
     const delButton = document.createElement('button');
-    const editButton = document.createElement('button');
+    // const editButton = document.createElement('button');
     const dateSpan = document.createElement('span');
     const date = new Date();
     const today = String(date.getDate()).padStart(2,"0");
@@ -34,16 +34,16 @@ function showTodo(newTodoObj){
     //삭제 버튼 생성
     delButton.innerText = "삭제"; 
     delButton.className="del-button";
-    //수정 버튼 생성
-    editButton.innerText = '수정';
-    editButton.className="edit-button";
+    // //수정 버튼 생성
+    // editButton.innerText = '수정';
+    // editButton.className="edit-button";
     // todo List 생성
     li.id  = newTodoObj.id;
     span.innerText = newTodoObj.todo;
     li.appendChild(span);
     li.appendChild(dateSpan);
     li.appendChild(delButton);
-    li.appendChild(editButton);
+    // li.appendChild(editButton);
     todoList.prepend(li);
 
     delButton.addEventListener('click',deleteTodo);
