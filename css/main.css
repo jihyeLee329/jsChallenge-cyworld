@@ -5,6 +5,7 @@
   font-family: "GangwonEdu_OTFBoldA", sans-serif;
 }
 h3.title {
+  width:100%;
   border-bottom: 1px solid #15b1cb;
   color: #15b1cb;
   font-size: 18rem;
@@ -174,7 +175,7 @@ h3.title {
   z-index: 1;
   font-size: 20rem;
   font-weight: bold;
-  padding: 20rem 0 5rem;
+  padding: 20rem 0 5rem 10rem;
 }
 .my42world-link {
   display: block;
@@ -193,15 +194,18 @@ h3.title {
 }
 .content-top {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
 }
 .content-top .clock {
+  padding-top: 10rem;
   font-size: 35rem;
   font-weight: 600;
   color: #333;
 }
 .weather {
+  padding-top: 10rem;
   font-size: 25rem;
 }
 .weather span {
