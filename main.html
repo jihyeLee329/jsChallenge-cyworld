@@ -26,14 +26,20 @@
                 </div>
                 <div class="select_wrap DungGeunMo">
                   <span>TODAY IS...</span>
-                  <select>
-                    <option value="">🌈 해피 </option>
-                    <option value="">🌧️ 우울 </option>
-                    <option value="">🧡 사랑해 </option>
-                    <option value="">👿 짜증 </option>
+                  <select name="emotion" class="DungGeunMo">
+                    <option value="happy">🌈 해피 </option>
+                    <option value="gloomy">🌧️ 우울 </option>
+                    <option value="love">🧡 사랑해 </option>
+                    <option value="annoyance">👿 짜증 </option>
                   </select>
                 </div>
-                <p class="quote DungGeunMo"></p>
+                <p class="quote GangwonEdu">
+                  "나 좋아하지마 "<br/> 
+                  "그게 뭔데"<br/> 
+                  "나 좋아하지 말라고"<br/> 
+                  "그거 어떻게 하는건데"<br/>
+                  "..."
+                </p>
               </div>
             </div>
             
@@ -41,21 +47,21 @@
           <div class="minihompy-right">
             <div class="content-wrap">
               <h1 class="content-title">
-                ┼───МЧ ĿочёisУОЦ‥「♡」
+                ♥━─…łĿøvеуоц…─━♥
                 <a class="my42world-link" href="https://jihyelee329.github.io/jsChallenge-cyworld/main">https://jihyelee329.github.io/jsChallenge-cyworld/main</a>
               </h1>
                 <div class="content-box">
                   <div class="content-top">
-                    <div class="weather">
-
+                    <div class="weather GangwonEdu">
                     </div>
                     <h1 class="clock"></h1>
                   </div>
                   <div class="content-middle miniroom">
-                    <img src="./img/miniroom.jpg" alt="미니룸" />
+                    <h3 class="DungGeunMo title">Mini Room</h3>
+                    <img src="./img/miniroom.png" alt="미니룸" />
                   </div>
                   <div class="content-bottom todo-wrap">
-                    <h3 class="DungGeunMo">To Do List</h3>
+                    <h3 class="DungGeunMo title">To Do List</h3>
                     <form class="todo-form">
                       <input type="text" placeholder="Write a To Do and Press Enter" />
                     </form>
@@ -64,15 +70,20 @@
                 </div>
             </div>
           </div>
-          <div class="minihompy-menu">
-            </div>
+          <ul class="minihompy-menu DungGeunMo">
+            <li>홈</li>
+            <li>프로필</li>
+            <li>다이어리</li>
+            <li>사진첩</li>
+            <li>방명록</li>
+          </ul>
         </div>
       </div>
     </section>
 
     <script src="./js/mainBgColor.js"></script>
-    <script src="./js/quotes.js"></script>
     <script src="./js/clock.js"></script>
     <script src="./js/todo.js"></script>
+    <script src="./js/weather.js"></script>
   </body>
 </html>
