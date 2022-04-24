@@ -4,6 +4,9 @@
 .GangwonEdu {
   font-family: "GangwonEdu_OTFBoldA", sans-serif;
 }
+.Digital {
+  font-family: "LAB디지털", sans-serif;
+}
 h3.title {
   width: 100%;
   border-bottom: 1px solid #15b1cb;
@@ -234,24 +237,106 @@ h3.title {
   justify-content: space-between;
   width: 100%;
 }
-.content-top .clock {
-  padding-top: 10rem;
+.content-top > div {
+  width: 48%;
+}
+#music .music-album {
+  width: 80rem;
+  height: 80rem;
+  border-radius: 100%;
+  /* animation-name: myAnimation; */
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear ;
+}
+@keyframes rotateAlbum {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.content-middle .clock {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  width: 150rem;
+  padding: 10rem;
   font-size: 35rem;
-  font-weight: 600;
+  font-weight: 400;
   color: #333;
+}
+#music {
+  margin-top: 10rem;
+}
+#music .music-album-wrap {
+  display: flex;
+  align-items: center;
+}
+#music .music-album-wrap > div:nth-of-type(1) {
+  margin-right: 10rem;
+}
+#music .music-btn{text-align: center;}
+#music .music-btn button {
+  cursor: pointer;
+  font-size: 0;
+  width: 20rem;
+  height: 20rem;
+  background-color: inherit;
+  background-size: inherit;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#music .music-btn #btnPlay {
+  margin:0 10rem;
+  background-image: url("../img/icon-play.png");
+}
+#music .music-btn #btnPause {
+  background-image: url("../img/icon-pause.png");
+}
+#music .music-btn #btnNext {
+  background-image: url("../img/icon-next.png");
+}
+
+#music .music-info {
+  font-size: 12rem;
+  margin-bottom: 5rem;
 }
 .weather {
   padding-top: 10rem;
-  font-size: 25rem;
+  font-size: 20rem;
 }
-.weather span {
+#music .play-time-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10rem 0;
+}
+#music .play-time {
   display: inline-block;
-  vertical-align: top;
-  line-height: 1.2;
-  color: #15b1cb;
+  margin: 4px;
 }
-.weather span:last-of-type {
-  font-size: 22rem;
+#music .play-progress-box {
+  background: #fff;
+  width: 220rem;
+  height: 5rem;
+  border: 1px solid #ddd;
+}
+#music .play-progress-bar {
+  width: 0;
+  height: 100%;
+  background: gray;
+}
+.weather_wrap {
+  padding: 10rem 5rem;
+}
+.weather_wrap li {
+  vertical-align: top;
+  line-height: 1.5;
+  font-size: 14rem;
+  color: #1b3892;
+  list-style: inside;
 }
 .content-middle {
   position: relative;
