@@ -1,3 +1,4 @@
+/*---- 공통  ----*/
 .DungGeunMo {
   font-family: "DungGeunMo", sans-serif;
 }
@@ -14,7 +15,9 @@ h3.title {
   font-size: 18rem;
   padding-bottom: 5rem;
 }
+/*---- 공통 종료 ----*/
 
+/*---- 미니홈피 시작 ----*/
 #main-wrap {
   width: 100vw;
   height: 100vh;
@@ -82,10 +85,9 @@ h3.title {
   background-repeat: no-repeat;
   background-position: center;
 }
-
 /* -----// 브라우저 탭 영역 종료 ----- */
 
-/* ----- 브라우저 미니폼피 영역 ----- */
+/* ----- 브라우저 미니홈피 영역 ----- */
 #minihompy {
   height: calc(100% - 45rem);
   background: url("../img/minihompy-bg.svg");
@@ -99,6 +101,7 @@ h3.title {
   border-radius: 15rem;
   padding: 30rem;
 }
+/* ----- 미니홈피 왼쪽 영역 ----- */
 .minihompy-left {
   width: 25%;
   padding-right: 10rem !important;
@@ -131,6 +134,8 @@ h3.title {
 .content-wrap:before {
   border-left: none;
 }
+
+/* ----- 하루 방문객  ----- */
 .total-guest {
   padding: 20rem 0 10rem 10rem;
   font-size: 14rem;
@@ -145,6 +150,8 @@ h3.title {
   border: 1px solid #333;
   border-radius: 15rem;
 }
+
+/* ----- 감정 select Box ----- */
 .profile-box .select_wrap {
   display: flex;
   font-size: 14rem;
@@ -162,6 +169,8 @@ h3.title {
 .select_wrap select {
   width: 50%;
 }
+
+/* ----- 프로필 글귀 영역 ----- */
 .profile-box .quote {
   font-size: 16rem;
   line-height: 1.5;
@@ -169,6 +178,8 @@ h3.title {
   padding: 20rem 0;
   text-align: center;
 }
+
+/* ----- 일촌 ----- */
 .surfing-url {
   position: absolute;
   bottom: 30rem;
@@ -204,12 +215,15 @@ h3.title {
   font-size: 14rem;
   background: #b9cae7;
 }
+
+/* ----- 미니홈피 오른쪽 영역 ----- */
 .minihompy-right {
   width: calc(100% - 30%);
   padding-left: 10rem !important;
   background-color: #fff;
   position: relative;
 }
+/* ----- 미니홈피 제목 ----- */
 .content-title {
   position: relative;
   z-index: 1;
@@ -241,6 +255,11 @@ h3.title {
 .content-top > div {
   width: 48%;
 }
+
+/* ----- 음악리스트 영역 ----- */
+#music {
+  margin-top: 20rem;
+}
 #music .music-album {
   width: 80rem;
   height: 80rem;
@@ -257,19 +276,6 @@ h3.title {
   to {
     transform: rotate(360deg);
   }
-}
-.content-middle .clock {
-  position: absolute;
-  top: 30%;
-  left: 20%;
-  width: 150rem;
-  padding: 10rem;
-  font-size: 35rem;
-  font-weight: 400;
-  color: #333;
-}
-#music {
-  margin-top: 20rem;
 }
 #music .music-album-wrap {
   display: flex;
@@ -320,10 +326,6 @@ h3.title {
   font-size: 12rem;
   margin-bottom: 5rem;
 }
-.weather {
-  padding-top: 10rem;
-  font-size: 20rem;
-}
 #music .play-time-wrap {
   display: flex;
   justify-content: space-between;
@@ -345,6 +347,12 @@ h3.title {
   height: 100%;
   background: gray;
 }
+
+/* ----- 날씨 영역 ----- */
+.weather {
+  padding-top: 10rem;
+  font-size: 20rem;
+}
 .weather_wrap {
   padding: 10rem 5rem;
 }
@@ -355,6 +363,8 @@ h3.title {
   color: #1b3892;
   list-style: inside;
 }
+
+/* ----- 미니룸 영역 ----- */
 .content-middle {
   position: relative;
   margin: 30rem 0;
@@ -377,12 +387,24 @@ h3.title {
   text-align: center;
   padding: 12rem 8rem 8rem;
 }
+
+.content-middle .clock {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  width: 150rem;
+  padding: 10rem;
+  font-size: 35rem;
+  font-weight: 400;
+  color: #333;
+}
 .content-middle img {
   display: block;
   margin-top: 10rem;
   width: 100%;
 }
 
+/* ----- 투두리스트 영역 ----- */
 .todo-form input {
   width: 100%;
   padding: 5rem 10rem;
@@ -423,6 +445,8 @@ h3.title {
   margin-left: 10rem;
   color: #15b1cb;
 }
+
+/* ----- 미니홈피 메뉴 영역 ----- */
 .minihompy-menu {
   width: 8%;
   height: fit-content;
