@@ -89,32 +89,54 @@
               </h1>
               <div class="content-box">
                 <div class="content-top">
-                  <h3 class="DungGeunMo title">New Updates!</h3>
-                  <div id="music" class="music">
-                    <div class="music-album">
-                      <audio id="music-box">
-                        <source id="musicSource" src="" />
-                        Yor browser does not support the audio format.
-                      </audio>
-                      <img class="music-album" src="" alt="">
-                      <h3 class="music-info"></h3>
-                    </div>
-                    <!-- 버튼 태그 생성 -->
-                    <div class="music-btn">
-                      <button id="btnPlay">재생</button>
-                      <button id="btnPause">일시정지</button>
-                      <button id="btnNext">다음</button>
+                  <div class="content-top-left">
+                    <h3 class="DungGeunMo title">Update News</h3>
+                    <ul class="weather_wrap">
+                      <li class="location"></li>
+                      <li class="now-weather"></li>
+                      <li>study JavaScript</li>
+                      <li>study React</li>
+                      <li>Complete the Nomad JavaScript Challenge</li>
+                    </ul>
+                  </div>
+                  <div class="content-top-right">
+                    <h3 class="DungGeunMo title">BGM</h3>
+                    <div id="music" class="music">
+                      <div class="music-album-wrap">
+                        <audio id="music-box">
+                          <source id="musicSource" src="" />
+                          Yor browser does not support the audio format.
+                        </audio>
+                        <div>
+                          <img class="music-album" src="" alt="" />
+                        </div>
+                        <div>
+                          <h3 class="music-info DungGeunMo"></h3>
+                          <div class="play-time-wrap">
+                            <!-- <span class="play-time start">00:00</span> -->
+                            <div class="play-progress-box">
+                              <div class="play-progress-bar"></div>
+                            </div>
+                            <!-- <span class="play-time end">00:00</span> -->
+                          </div>
+
+                          <!-- 버튼 태그 생성 -->
+                          <div class="music-btn">
+                            <button id="btnPause">일시정지</button>
+                            <button id="btnPlay">재생</button>
+                            <button id="btnNext">다음</button>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="weather GangwonEdu"></div>
-                  
-                  <h1 class="clock"></h1>
                 </div>
                 <div class="content-middle miniroom">
                   <h3 class="DungGeunMo title">Mini Room</h3>
                   <div>
                     <img src="./img/miniroom.png" alt="미니룸" />
                     <span class="greeting"></span>
+                    <h1 class="clock Digital"></h1>
                   </div>
                 </div>
                 <div class="content-bottom todo-wrap">
