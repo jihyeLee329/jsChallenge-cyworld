@@ -1,4 +1,6 @@
-const weatherForm = document.querySelector('.weather');
+const weatherForm = document.querySelector('.weather_wrap');
+const nowWeather = weatherForm.querySelector('.now-weather');
+const gps = weatherForm.querySelector('.location');
 const APIKEY = "6ff7ed54a17e5fb61040d63127c63079";
 
 function onGeoSuccess(position){
@@ -10,7 +12,8 @@ function onGeoSuccess(position){
        const temp = data.main.temp;
        const location = data.name;
        const weather = data.weather[0].main;
-       weatherForm.innerHTML = `현재 위치 <span>${location}</span><br/>기온 <span>${temp}°C</span> / 기후 <span>${weather}</span>`;
+       nowWeather.innerText= `${temp}°C / ${weather}`;
+       gps.innerText = `${location}`;
     });
 }
 //위치 잡아오기 실패 시
