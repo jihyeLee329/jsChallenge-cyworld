@@ -132,9 +132,10 @@ h3.title {
   border-left: none;
 }
 .total-guest {
-  padding: 20rem 0 10rem;
+  padding: 20rem 0 10rem 10rem;
   font-size: 14rem;
 }
+.total-guest > span.today{font-size: 18rem; color:#15b1cb}
 .profile-box,
 .content-box {
   position: relative;
