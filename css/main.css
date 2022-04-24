@@ -244,7 +244,7 @@ h3.title {
   width: 80rem;
   height: 80rem;
   border-radius: 100%;
-  /* animation-name: myAnimation; */
+  border:1px solid #ddd;
   animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-timing-function: linear ;
@@ -268,7 +268,7 @@ h3.title {
   color: #333;
 }
 #music {
-  margin-top: 10rem;
+  margin-top: 20rem;
 }
 #music .music-album-wrap {
   display: flex;
@@ -276,6 +276,20 @@ h3.title {
 }
 #music .music-album-wrap > div:nth-of-type(1) {
   margin-right: 10rem;
+  position: relative;
+}
+#music .music-album-wrap > div:nth-of-type(1):before{
+  content:"";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin:auto;
+  width:10rem; height:10rem; background:#fff;
+  border-radius: 100%;
+  z-index: 5;
 }
 #music .music-btn{text-align: center;}
 #music .music-btn button {
