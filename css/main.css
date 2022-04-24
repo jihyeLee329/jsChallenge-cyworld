@@ -316,6 +316,7 @@ h3.title {
 }
 
 #music .music-info {
+  text-align: center;
   font-size: 12rem;
   margin-bottom: 5rem;
 }
