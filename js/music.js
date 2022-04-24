@@ -21,26 +21,53 @@ const musicArray = [
 
 function playMusic() {
   musicBox.volume = 1;
-  musicBox.loop = true;
   musicBox.play();
 }
 
 function pauseMusic(){
+    musicAlbum.style.animationName = "";
     musicBox.pause();
 }
 
 function loadMusic(){
     const source = document.querySelector('#musicSource');
     source.src= `./mp3/${musicArray[currentAudio]}`;
-    
     musicBox.load();
+    showCurrentMusic();
+    musicAlbum.style.animationName = "rotateAlbum";
     playMusic();
 }
 
-function showFirstMusic(){
+function showCurrentMusic(){
     musicAlbum.src= `./img/music_${currentAudio}.jpg`;
-    musicInfo.innerText = `${singerArray[currentAudio]} - ${titleArray[currentAudio]}`;
+    musicInfo.innerHTML = `<span>${singerArray[currentAudio]} - ${titleArray[currentAudio]}</span>`;
+    
 }
+
+function getCurrentTime(){
+    const progressbar = document.querySelector('.play-progress-bar');
+    let currentSeconds = parseInt(musicBox.currentTime);
+    const musicDuration = parseInt(musicBox.duration);
+    let currentMinutes = 0;
+    let currentTimeBar = (currentSeconds / musicDuration)*100;
+    currentTimeBar = currentTimeBar.toFixed(2);
+    progressbar.style.width = `${currentTimeBar}%`; 
+    // console.log(`${currentSeconds} / ${musicDuration}`)
+    // if(currentSeconds >= 60){
+    //     currentMinutes += 1;
+    //     currentSeconds = currentSeconds - 60; 
+    // }else if(currentSeconds >= 120){
+    //     currentMinutes += 2;
+    //     currentSeconds = currentSeconds - 120; 
+    // }else if(currentSeconds >= 180){
+    //     currentMinutes += 3;
+    //     currentSeconds = currentSeconds - 180; 
+    // }else if(currentSeconds >= 240){
+    //     currentMinutes += 4;
+    //     currentSeconds = currentSeconds - 240; 
+    // }
+    // console.log(`${currentMinutes}:${currentSeconds} `);
+};
 
 function handleNextButton(){
     if(currentAudio < MUSIC_COUNT){
@@ -56,7 +83,11 @@ function handleNextButton(){
 playBtn.addEventListener("click", loadMusic);
 // 일시정지 버튼
 pauseBtn.addEventListener('click', pauseMusic);
-
+// 다음 버튼
 nextBtn.addEventListener('click',handleNextButton);
+// 노래 끝나면
+musicBox.addEventListener('ended', handleNextButton);
 
-showFirstMusic();
+showCurrentMusic();
+
+setInterval(getCurrentTime, 1000)
